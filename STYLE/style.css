@@ -1,13 +1,157 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Opcional: separa los elementos */
-    align-items: center; /* Opcional: centra verticalmente */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #eee;
 }
 
-.container img,
-.container table {
-    /* Opcional: ajusta el tamaño según necesidad */
-    max-width: 45%;
-    height: auto;
+#navbar {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
 }
+
+#navbar a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+#navbar a:hover {
+    color: orange;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.titulo,
+.subtitulo {
+    text-align: center;
+    color: orange;
+    margin-top: 20px;
+}
+
+.seccion {
+    padding: 20px;
+}
+
+#footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.contenido-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.img-servicios-container,
+.img-contactos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#img-inicio,
+#img-servicios,
+#img-Contactos {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid orange;
+    box-shadow: 0 0 10px black;
+    display: block;
+    margin: 0 auto;
+}
+
+#img-Contactos {
+    width: 300px;
+    max-width: 100%;
+}
+
+#tabla-clases {
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+    width: 300px;
+}
+
+#tabla-clases th,
+#tabla-clases td {
+    border: 1px solid #666;
+    padding: 10px;
+    text-align: center;
+}
+
+.lista-servicios {
+    margin: 20px auto;
+    padding: 0 40px;
+    list-style-type: square;
+}
+
+.lista-servicios li {
+    margin: 10px 0;
+}
+
+#cajas-servicios {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#cajas-servicios .caja {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #444;
+    padding: 15px;
+    width: 45%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+#formulario input,
+#formulario textarea {
+    width: 80%;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #666;
+}
+
+#formulario button {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#formulario button:hover {
+    background-color: #ffcc66;
+}
+
