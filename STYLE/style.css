@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Opcional: separa los elementos */
+    align-items: center; /* Opcional: centra verticalmente */
+}
+
+.container img,
+.container table {
+    /* Opcional: ajusta el tamaño según necesidad */
+    max-width: 45%;
+    height: auto;
+}
