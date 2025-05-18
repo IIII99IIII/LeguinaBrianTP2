@@ -1,57 +1,60 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Inicio - Dark Souls 3</title>
-    <link rel="stylesheet" href="../STYLE/style.css">
+  <meta charset="UTF-8">
+  <title>Dark Souls 3 - Inicio</title>
+  <link rel="stylesheet" href="../STYLE/style.css">
 </head>
 <body>
+  <nav id="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contactos.html">Contacto</a>
+  </nav>
 
-    <nav class="navbar">
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="contactos.html">Contacto</a>
-    </nav>
+  <main class="seccion" id="inicio">
+    <h1 class="titulo">Dark Souls III</h1>
+    <h2 class="subtitulo">Bienvenido a la guía definitiva para sobrevivir a Lothric</h2>
 
-    <main>
-        <h1>Dark Souls 3</h1>
-        <h2>Bienvenido a la guía definitiva para sobrevivir a Lothric</h2>
+    <div class="contenido-flex vertical-center">
+      <div class="bloque-img">
+        <img id="img-inicio" src="../IMAGEN/IMG1.jpg" alt="Dark Souls Guerrero">
+      </div>
 
-        <div class="contenido-inicio">
-            <img src="../IMAGEN/IMG1.jpg" alt="Dark Souls Imagen" width="300">
+      <div class="bloque-tabla">
+        <table id="tabla-clases">
+          <thead>
+            <tr>
+              <th>Clase</th>
+              <th>Atributos</th>
+              <th>Estilo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Caballero</td>
+              <td>Fuerza, Vitalidad</td>
+              <td>Tanque defensivo</td>
+            </tr>
+            <tr>
+              <td>Hechicero</td>
+              <td>Inteligencia, Fe</td>
+              <td>Lanzador de conjuros</td>
+            </tr>
+            <tr>
+              <td>Ladrón</td>
+              <td>Destreza, Suerte</td>
+              <td>Velocidad y críticos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Clase</th>
-                        <th>Atributos</th>
-                        <th>Estilo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Caballero</td>
-                        <td>Fuerza, Vitalidad</td>
-                        <td>Tanque defensivo</td>
-                    </tr>
-                    <tr>
-                        <td>Hechicero</td>
-                        <td>Inteligencia, Fe</td>
-                        <td>Lanzador de conjuros</td>
-                    </tr>
-                    <tr>
-                        <td>Ladrón</td>
-                        <td>Destreza, Suerte</td>
-                        <td>Ágil y crítico</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
-
-    <footer>
-        <p>Contacto: <a href="mailto:darksouls@lothric.com">darksouls@lothric.com</a></p>
-    </footer>
-
+  <footer id="footer">
+    <p>Contacto: <a href="mailto:darksouls@lothric.com">darksouls@lothric.com</a></p>
+  </footer>
 </body>
 </html>
